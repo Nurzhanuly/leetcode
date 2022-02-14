@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package easy
 
 type MyStack struct {
 	Stack []rune
@@ -37,8 +35,8 @@ func backspaceCompare(S string, T string) bool {
 	return output(S) == output(T)
 }
 
-func main() {
-	S := "ab#c"
-	T := "ab#c"
-	fmt.Println(backspaceCompare(S, T))
-}
+// func main() {
+// 	S := "ab#c"
+// 	T := "ab#c"
+// 	fmt.Println(backspaceCompare(S, T))
+// }

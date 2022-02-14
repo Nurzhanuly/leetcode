@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package easy
 
 type MinStack struct {
 	Stack []int
@@ -37,14 +35,14 @@ func (this *MinStack) GetMin() int {
 	return this.Min[len(this.Min)-1]
 }
 
-func main() {
-	minStack := &MinStack{[]int{}, []int{}}
-	minStack.Push(-2)
-	minStack.Push(0)
-	minStack.Push(-3)
-	minStack.GetMin()
-	minStack.Pop()
-	minStack.Top()
-	minStack.GetMin()
-	fmt.Println(minStack)
-}
+// func main() {
+// 	minStack := &MinStack{[]int{}, []int{}}
+// 	minStack.Push(-2)
+// 	minStack.Push(0)
+// 	minStack.Push(-3)
+// 	minStack.GetMin()
+// 	minStack.Pop()
+// 	minStack.Top()
+// 	minStack.GetMin()
+// 	fmt.Println(minStack)
+// }
